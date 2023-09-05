@@ -1,0 +1,84 @@
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%,52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+box-sizing:  border-box;
+}
+body{
+    background-image: url(./image/pattern-background-mobile.svg);
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+    width: 450px;
+    background-color: white;
+    color: var(--Desaturated-blue);
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 600px;
+    bottom: 40px;
+}
+.title{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+.hero{
+    width: 100%;
+}
+.cointainer{
+    padding: 30px; 
+}
+.cointainer > *{
+    margin: 13px 0;
+}
+.order{
+    line-height: 25px;
+}
+button{
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.proceed-button{
+    background-color: var(--Bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+}
+.proceed-button:hover{
+    opacity: 0.8;
+}
+.cancel-button{
+   background-color: white;
+   color: var(--Desaturated-blue);
+   margin-top: 22px;
+
+}
+.cancel-button:hover{
+    color: black;
+}
+.cointainerplan{
+    font-size: 16px;
+    background-color: var(--Very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+align-items: center;
+}
